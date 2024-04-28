@@ -14,14 +14,15 @@ public class ContaTerminal {
 
         scanner.close();
 
-        System.out.print("Olá "+nomeCliente+"!"+
-        "\nSegue as informações de sua conta bancaria abaixo!\n");
+        System.out.print(
+        "Olá ".concat(nomeCliente).concat("!")
+        .concat("\nSegue as informações de sua conta bancaria abaixo!\n")
+        );
 
         System.out.print(
         "Agência: "+agencia+
         "\nNúmero da Conta: "+conta+
         "\nSeu Saldo: "+saldo
         );
-        
     }
 }
